@@ -33,6 +33,7 @@ To play BlockQuest, follow these steps:
 ## Dependencies
 
 - **Audio Files:** The game relies on audio files (`correct.mp3`, `incorrect.mp3`, `finish.mp3`) for sound effects. Ensure these files are present in the project directory.
+- **Clue Images:** The clue images are expected to be in a folder named `clueImage`. Ensure this folder is present in the project directory.
 
 ## Contributions
 
