@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBlock Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="starCount">
+        <img src="star.gif" alt="Star">
+        <p id="startext">Stars : 0</p> <!-- Changed <h> to <p> -->
+    </div>
+    <div id="gameContainer">
+        
+        <h1><b>BlockQuest</b></h1>
+        <div id="infoPanel">
+            <p>Welcome to the Crypto-Blockchain Game! Solve puzzles to learn about blockchain.</p>
+        </div>
+        <button id="addBlockBtn">Press Spacebar to Add Block</button>
+        <div id="blockchain"></div>
+    </div>
+
+    <!-- <div id="imagePopup" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="popupImg">
+    </div> -->
+
+    <div id="puzzleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closePuzzle">&times;</span>
+            <p id="puzzleQuestion"></p>
+            <img class="modal-img" id="popupImg"> <!-- Image inside the puzzle modal -->
+            <p id="puzzleClueContainer"> <!-- Container for the censored clue -->
+                <span id="censoredClue">Clue: Censored</span> <!-- Censored clue -->
+                <span id="uncensoredClue"></span> <!-- Uncensored clue (hidden by default) -->
+            </p>
+            <input type="text" id="puzzleAnswer">
+            <button id="submitAnswer">Submit</button>
+            <p id="skip">Press "Enter" to submit the answer</p>
+            <p id="skip">Press "Spacebar" to skip current puzzle</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
